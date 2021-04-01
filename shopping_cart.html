@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Savory</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="store.js" async></script>
+
+</head>
+
+<body>
+    <div id="banner">
+        <img src="Head.png" alt="Page-Front Image" class="logo">
+        <a href="shopping_cart.html"><img src="Cart.png" class="icon" alt="Shopping Cart icon"></a>
+        <!-- navigation bar -->
+        <a href="Home.html">Home  ᐯ</a>
+        <a href="list.html">Featured  ᐯ</a>
+        <a href="#">
+                support  ᐯ
+                </a>
+        <a href="#">
+                account  ᐯ
+                </a>
+    </div>
+
+
+    <div class="container">
+        <button class="button2" onclick="document.location='list.html'">Back to Product</button>
+        <h3>Shopping Cart</h3>
+        <!--subcontainer contains entire shopping bag component-->
+        <div class="subcontainer">
+            <div class="shoppingbag">
+                <div class="item2">
+                    <img src="Couch.png" alt="Couch Pillow">
+                    <div class="cart-item">
+                        <h3>Couch Pillow</h3>
+                        <p>Color: Green</p>
+                        <p>Size: 10’’ x 10’’</p>
+                        <p>
+                            <u>
+                                <a href="detail.html">go back</a>
+                            </u>
+                            <div class="cart-price">
+                                <p>
+                                    Price:
+                                    <b>$ 16</b>
+                                </p>
+                            </div>
+                    </div>
+                    <!-- individual cart items-->
+
+                    <div class="cart-item">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h5>Quantity</h5>
+                        <div class="quantity">
+                            <div class="custom-select" style="width:200px;">
+                                <input class="cart-quantity-input" type="number" min="1" max="20" value="1">
+                            </div>
+                        </div>
+                        <br>
+                        <button class="btn btn-danger delete-item" type="button">
+                            REMOVE
+                        </button>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <div class="text">
+                        <b>Order Summary</b>
+                        <hr>
+                        <p>Item(s) Subtotal: $16</p>
+                        <p>Tax: $1.26.</p>
+                        <p><b>Order Total: $17.26</b></p>
+                        <hr>
+                        <button class="btn btn-checkout" type="button">
+                            <b>Checkout
+                            </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- trending products section -->
+        <main>
+            <div>
+                <h3>Recommended <span style="color: #C4B1A6">For You</span> :</h3>
+            </div>
+            <div class="recipe">
+                <a href="detail.html"><img src="Couch.png" alt="Couch Pillow"></a>
+                <h2>Couch Pillow</h2>
+                <p class="mins">$ 16</p>
+
+            </div>
+            <div class="recipe">
+                <img src="Cushion.png" alt="White&Orange Cushion" />
+                <h2>White&Orange Cushion</h2>
+                <p class="mins">$ 16</p>
+
+            </div>
+            <div class="recipe">
+                <img src="Throw.png" alt="Throw Pillow" />
+                <h2>Throw Pillow</h2>
+                <p class="mins">$ 16</p>
+
+            </div>
+            <div class="recipe">
+                <img src="Bed.png" alt="Bed Pillow" />
+                <h2>Bed Pillow</h2>
+                <p class="mins">$ 16</p>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/savory.svg" class="logo">
+        </footer>
+
+    </div>
+</body>
+
+</html>
